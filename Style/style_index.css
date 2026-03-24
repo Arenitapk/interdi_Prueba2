@@ -1,0 +1,109 @@
+body {
+    background: white;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+/* ====================================================================================== */
+                                /* MENU PRINCIPAL HEADER */
+     /* LOGO */                           
+.menuPrincipalHeader {
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+    margin: auto;
+}
+.contenedorLogo img{
+    width: 65px;   /* tamaño del logo */
+    height: auto;
+    padding-left: 30px;
+    cursor: pointer;
+}
+    /* PARTE MEDIA MENU PRINCIPAL */
+.contenedorMenuPrincipal {
+    display: flex;
+    gap: 50px;
+}
+.botonesMenuPrincipal {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 125, 125);
+}
+.botonesMenuPrincipal:hover {
+    color: black;
+}
+    /* PARTE DERECHA REGISTRO/LOGIN */
+.contenedorBotonRegistro_IniciarSesion {
+    padding-right: 30px;
+}
+.botonRegistro_IniciarSesion {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background: rgb(241, 241, 241);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.botonRegistro_IniciarSesion:hover {
+    background: rgb(207, 207, 207);
+}
+
+
+/* ====================================================================================== */
+                                        /* INICIO */
+.tituloIntroduccionPrincipal{
+    color: rgb(40, 40, 40);
+    font-size: 45px;
+}
+.textoLenguaSeñas {
+    color: rgb(0, 125, 125);
+}
+.contenedorInicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-bottom: 1px solid #dfdfdf;
+}
+.contenedorInicioParteIzquierda {
+    align-items: left;
+    width: 50%;
+}
+.contenedorInicioParteDerechaImagen {
+    width: 50%;
+}
+.contenedorInicioParteDerechaImagen img {
+    width: 100%;
+}
+.botonEmpezar {
+    border: none;
+    border-radius: 10px;
+    background: rgb(0, 125, 125);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    width: 40%;
+    margin: 20px auto;
+}
+.botonEmpezar:hover {
+    background: rgb(0, 91, 91);
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+/* ====================================================================================== */
+                                    /* COMO FUNCIONA */
+.contenedorComoFunciona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(234, 234, 234);
+}
