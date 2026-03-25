@@ -19,6 +19,21 @@ html {
 section {
   scroll-margin-top: 60px; /* ajusta según el alto de tu header */
 }
+#splash {
+    display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#splash img {
+  width: 100%; /* ajusta según tu logo */
+  object-fit: contain;
+}
 /* ====================================================================================== */
                                 /* MENU PRINCIPAL HEADER */
      /* LOGO Chiquitin*/                           
@@ -288,6 +303,7 @@ section {
     width: 100%;
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 30px;
+    color: rgb(40, 40, 40);
 }                                    
 .textoFrecuentesAyuda {
     color: rgb(0, 125, 125);
@@ -310,17 +326,20 @@ section {
     background: rgb(229, 229, 229);
 }
 .faqBoton {
-    width: 700px;
+    width: 800px;
     cursor: pointer;
+    font-weight: bold;
 }
 /* ====================================================================================== */
                                     /* PIE DE PAGINA */
 .footer{
     width: 100%;
     flex-direction: column;
+    align-items: center;
     background-color:rgb(0, 91, 91);
     color: #fff;
     font-family: "Poppins", sans-serif;
+    font-size: 13px;
 }
 .footer-contenido{
     width: 100%;
