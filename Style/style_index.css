@@ -1,11 +1,27 @@
+/* ====================================================================================== */
+                                /* INFORMACION */
+/* FONDO 1: WHITE */
+/* FONDO 2: background: rgb(239, 239, 239); */
+/* TEXTOS CAMBIADOS: color: rgb(0, 125, 125); */         
+
+/* ====================================================================================== */
+                                /* BODY (FONDO 1) */
 body {
     background: white;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 60px; /* ajusta según el alto de tu header */
 }
 /* ====================================================================================== */
                                 /* MENU PRINCIPAL HEADER */
-     /* LOGO */                           
+     /* LOGO Chiquitin*/                           
 .menuPrincipalHeader {
     display: flex;
     background: white;
@@ -14,6 +30,9 @@ body {
     border-bottom: 1px solid #dfdfdf;
     width: 100%;
     margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .contenedorLogo img{
     width: 65px;   /* tamaño del logo */
@@ -65,22 +84,29 @@ body {
 }
 .contenedorInicio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 15%;
     margin-right: 15%;
-    border-bottom: 1px solid #dfdfdf;
+}
+.contenedorPadreInicio {
+    display: flex;
+    flex-direction: row;
 }
 .contenedorInicioParteIzquierda {
     align-items: left;
     width: 50%;
+}
+.pListaInicio {
+    font-size: 15px;
 }
 .contenedorInicioParteDerechaImagen {
     width: 50%;
 }
 .contenedorInicioParteDerechaImagen img {
     width: 100%;
+    height: 95%;
 }
 .botonEmpezar {
     border: none;
@@ -98,12 +124,232 @@ body {
     transform: scale(1.10);
     cursor: pointer;
 }
+.ContenedorInfoColombia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    border-radius: 15px;
+    margin-bottom:  30px;
+}
+.imgMapaColombia {
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.pInfoColombia {
+    padding-left: 3%;
+    padding-right: 5%;
+}
+.textoUsuarioPInfo {
+    color: rgb(0, 125, 125);
+    font-weight: bold;
+}
+.textoInterpretePInfo {
+    color: rgb(0, 125, 125);
+    font-weight: bold;
+}
 
 /* ====================================================================================== */
                                     /* COMO FUNCIONA */
+.textoFunciona {
+    color: rgb(0, 125, 125);
+}
 .contenedorComoFunciona {
+    padding-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(234, 234, 234);
+    background: rgb(239, 239, 239);
+    color: rgb(40, 40, 40);
+    padding-bottom: 30px;
+}
+.contenedorImagenesComoFunciona {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+.contenedorImagenesComoFunciona img {
+    width: 20%;
+    height: 100%;
+}
+.imgComoFunciona:hover {
+    transform: scale(1.05);
+}
+
+/* ====================================================================================== */
+                                    /* NOSOTROS (acerca de nosotros)*/
+
+.contenedorNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: rgb(40, 40, 40);
+}   
+.textoh1InterdiContenedorNosotros {
+    color: rgb(0, 125, 125);
+}
+.contenedorNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+.contenedorNosotrosPadreIzquierdaDerecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.contenedorInfoNosotrosIzquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 50%;
+}
+.contenedorInfoNosotrosDerecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 50%;
+}
+.contenedorInfoNosotrosAbajo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.pTextoNuestroProposito {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/* IMAGENES DE CONTENEDOR NOSOTROS!!!! */
+
+.imgNosotrosMision {
+    padding: 10px;
+    width: 60%;
+    height: 10%;
+}
+.imgNosotrosEquipo {
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+    height: 10%;
+}
+.imgNosotrosNuestrosValores {
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+    height: 10%;
+}
+.imgNosotrosVision {
+    padding: 10px;
+    width: 60%;
+    height: 100%;
+}
+.imgNosotrosNuestroProposito {
+    padding: 10px;
+    width: 35%;
+    height: 10%;
+}
+
+.elementosNosotrosNuestrosValores {
+    font-size: 13px;
+}
+
+/* ====================================================================================== */
+                                    /* AYUDA (Preguntas frecuentas) */
+
+.contenedorAyuda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(239, 239, 239);
+    padding-top: 30px;
+    width: 100%;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 30px;
+}                                    
+.textoFrecuentesAyuda {
+    color: rgb(0, 125, 125);
+
+}
+.faq {
+    background: white;
+    color: rgb(40, 40, 40);
+    padding: 15px;
+    margin: 10%;
+    border: none;
+    border-radius: 10px;
+    cursor: auto;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.faq:hover {
+    background: rgb(229, 229, 229);
+}
+.faqBoton {
+    width: 700px;
+    cursor: pointer;
+}
+/* ====================================================================================== */
+                                    /* PIE DE PAGINA */
+.footer{
+    width: 100%;
+    flex-direction: column;
+    background-color:rgb(0, 91, 91);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+.footer-contenido{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-seccion{
+    width: 30%;
+}
+.footer-seccion h4{
+    border-bottom: 2px solid #fffdfd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-seccion a{
+    color: #ccc;
+    text-decoration: none;
+}
+.footer-seccion a:hover{
+    color: #fff;
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top:10px;
+    font-size: 14px;
 }
